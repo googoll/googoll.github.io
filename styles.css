@@ -178,6 +178,18 @@ h3 {
   border: 1px solid rgba(18, 72, 63, 0.18);
 }
 
+.portrait {
+  position: absolute;
+  right: 54px;
+  top: 48px;
+  width: 150px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 1px solid rgba(28, 37, 36, 0.18);
+  background: var(--mist);
+  filter: saturate(0.92);
+}
+
 .signal {
   position: absolute;
   width: 12px;
@@ -280,6 +292,25 @@ h3 {
   font-size: 18px;
 }
 
+.quick-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.quick-facts span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  background: rgba(255, 254, 249, 0.7);
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 800;
+}
+
 .section {
   padding: 64px 0;
 }
@@ -360,6 +391,14 @@ time {
   font-weight: 900;
 }
 
+.text-link {
+  display: inline-flex;
+  margin-top: 8px;
+  color: var(--green);
+  font-weight: 800;
+  border-bottom: 1px solid currentColor;
+}
+
 .contact-panel {
   display: flex;
   justify-content: space-between;
@@ -405,6 +444,10 @@ time {
     min-height: 420px;
   }
 
+  .portrait {
+    width: 128px;
+  }
+
   .agenda-grid {
     grid-template-columns: 1fr;
   }
@@ -435,7 +478,7 @@ time {
   .main-card {
     left: 22px;
     right: 22px;
-    top: 100px;
+    top: 130px;
     padding: 22px;
   }
 
@@ -451,6 +494,13 @@ time {
   .note-card {
     left: 20px;
     bottom: 100px;
+  }
+
+  .portrait {
+    left: 22px;
+    right: auto;
+    top: 24px;
+    width: 92px;
   }
 
   .work-list article {
